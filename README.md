@@ -1,5 +1,7 @@
-# AdventCode
- Collection of my solutions in Python for the Code [Advent Calendar 2023](https://adventofcode.com). 
+#⛄ 🎁 <span style="color:red;">AdventCode</span> 🎄 🤶
+
+ 🎅🦌❄️🕯️<span style="color:green;">Collection of my solutions in Python for the Code [Advent Calendar 2023](https://adventofcode.com). </span> 🔔🎶🥛🍪
+ 
 
 
 Here the description of the challenges:
