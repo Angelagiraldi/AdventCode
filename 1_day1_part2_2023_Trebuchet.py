@@ -5,7 +5,6 @@ try:
         file_content = file.readlines()
 except FileNotFoundError:
     print("File not found. Please enter a valid file name.")
-    exit()
 
 # Mapping of spelled-out numbers to their corresponding numerical values
 word_to_digit = {
