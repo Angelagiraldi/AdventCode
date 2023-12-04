@@ -7,11 +7,6 @@ try:
 except FileNotFoundError:
     print("File not found. Please enter a valid file name.")
 
-
-
-
-
-
 cube_counts = {
         'red': 12,
         'green': 13,
@@ -34,7 +29,6 @@ def possible_game(game, cube_counts, possible_game_ids):
     if valid_game:
         game_id = int(game.split(':')[0].split()[1])
         possible_game_ids.append(game_id)
-
 
 # Split input into individual games
 for games in file_content:

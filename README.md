@@ -1,8 +1,10 @@
 #⛄ 🎁 <span style="color:red;">AdventCode</span> 🎄 🤶
 
- 🎅🦌❄️🕯️<span style="color:green;">Collection of my solutions in Python for the Code [Advent Calendar 2023](https://adventofcode.com). </span> 🔔🎶🥛🍪
+ 🎅🦌❄️🕯️<span style="color:green;">Collection of my solutions in Python for the  [Code Advent Calendar 2023](https://adventofcode.com). </span> 🔔🎶🥛🍪
  
 
+| Day 1 | Day 2 | Day 3 | Day 4 | Day 5 |
+| -- | -- | -- | -- | -- | 
 
 Here the description of the challenges:
 
@@ -22,3 +24,7 @@ To accomplish this, the information provided includes game IDs along with subset
 The task is to determine, for each game played on Snow Island, the minimum number of cubes of each color that must have been in the bag to make the game possible. The Elf specifies that the fewest cubes of each color are needed to ensure the game's feasibility.
 To achieve this, we're given the same set of example games. For instance, in Game 1, the minimum set of cubes consisted of 4 red, 2 green, and 6 blue cubes. The key is to ascertain the minimum number of cubes for each color without which the game would have been impossible to play.
 The calculation of this minimum set of cubes involves identifying the lowest count for each color within each game scenario. The power of a set of cubes is determined by multiplying the counts of red, green, and blue cubes together. The task requires computing these minimum sets for each game and calculating the sum of the powers derived from these sets across all the games to obtain the final solution.
+
+##--Day 3: Gear Ratios  --
+####PART 1
+This challenge involves an encounter with an Elf at a gondola lift station. The gondolas are not functioning due to a missing engine part. The Elf, surprised by your arrival, explains that any number adjacent to a symbol (including diagonally adjacent numbers) within the engine schematic constitutes a "part number." Your task is to add up all these part numbers in the engine schematic to identify the missing part. However, periods (.) within the schematic do not count as symbols for this purpose.
