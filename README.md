@@ -28,3 +28,7 @@ The calculation of this minimum set of cubes involves identifying the lowest cou
 ##--Day 3: Gear Ratios  --
 ####PART 1
 This challenge involves an encounter with an Elf at a gondola lift station. The gondolas are not functioning due to a missing engine part. The Elf, surprised by your arrival, explains that any number adjacent to a symbol (including diagonally adjacent numbers) within the engine schematic constitutes a "part number." Your task is to add up all these part numbers in the engine schematic to identify the missing part. However, periods (.) within the schematic do not count as symbols for this purpose.
+
+####PART 2
+Despite fixing the missing part, the gondola hasn't left the station due to an unresolved issue. The problem lies with certain symbols denoted as '*' in the engine schematic. A 'gear' is any '*' symbol that is adjacent to exactly two 'part numbers' (as defined previously). The gear ratio of a gear is the result of multiplying the two adjacent part numbers together.
+The task requires finding and calculating the gear ratios of all gears present in the engine schematic. Each gear's ratio is obtained by multiplying the two adjacent part numbers connected to the gear. The goal is to sum up all the gear ratios to help identify the problematic gear that needs replacement in the engine.
