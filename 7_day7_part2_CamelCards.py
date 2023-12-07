@@ -1,5 +1,5 @@
 
-strenght = ['A', 'K', 'Q', 'J', 'T', '9', '8', '7', '6', '5', '4', '3', '2']
+strenght = ['A', 'K', 'Q', 'T', '9', '8', '7', '6', '5', '4', '3', '2', 'J']
 
 hands = []
 
@@ -45,7 +45,6 @@ def determine_type(cards):
     else:
         return 7
 
-
 if __name__ == "__main__":
 
     input_file = "7_day7_input.txt"
@@ -58,7 +57,18 @@ if __name__ == "__main__":
 
     for line in file_content:
         cards, bid = line.split()
-        hand_type = determine_type(cards)
+
+        hand_type = 7
+        if 'J' in cards:
+            replacements = strenght[:-1]
+            for replacement in replacements:
+                joker_cards = cards.replace('J', replacement)
+                hand_type = min(hand_type, determine_type(joker_cards))
+                if hand_type == 1:
+                    break
+        else:
+            hand_type = determine_type(cards)
+
         hands.append((cards, bid, hand_type))
     
     hands = sorted(hands, reverse = True, 
