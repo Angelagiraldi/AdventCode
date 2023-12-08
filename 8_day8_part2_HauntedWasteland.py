@@ -1,3 +1,4 @@
+import math
 if __name__ == "__main__":
 
     input_file = "8_day8_input.txt"
@@ -18,19 +19,19 @@ if __name__ == "__main__":
         next_positions = [x.strip() for x in positions[positions.find('(') + 1:positions.find(')')].split(',')]
         nodes[current] = next_positions
     
-    not_arrived = True 
-    count = 0   
-    current_position = 'AAA'
+    a_nodes, cycles = [n for n in nodes.keys() if n.endswith("A")], []
 
-    while not_arrived:
-        current_position = nodes[current_position][int(instructions[count%len(instructions)])]
-        count += 1
-        if current_position == 'ZZZ':
-            not_arrived = False
-    
-    print(count)
+    print(a_nodes)
 
+    for n in a_nodes:
+        not_arrived = True 
+        count = 0   
+        current_position = n 
+        while not_arrived:
+            current_position = nodes[current_position][int(instructions[count%len(instructions)])]
+            count += 1
+            if current_position.endswith('Z'):
+                not_arrived = False    
+        cycles.append(count)
 
-
-    
-
+    print(math.lcm(*cycles))
