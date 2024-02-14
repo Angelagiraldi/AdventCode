@@ -1,5 +1,3 @@
-from collections import deque
-
 def take_steps(step_limit):
     stepped_to = set()
     stepped_to.add(start)
